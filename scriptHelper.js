@@ -29,7 +29,6 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
    }
 
     }
-
  
  function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    
@@ -46,9 +45,8 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
     } else if (validateInput(pilot) === "Is a number" || validateInput(copilot) === "Is a number") {
         alert("Invalid input. Please submit a name.")
     } else {
-        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
-        copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
-    };
+       pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
+       copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
 
     if (fuelLevel < 10000 && cargoLevel > 10000) {
         list.style.visibility = 'visible';
@@ -80,7 +78,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
     }
 
 }
- 
+ }  
  async function myFetch() {
      let planetsReturned;
  
